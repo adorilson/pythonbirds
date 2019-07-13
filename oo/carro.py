@@ -152,3 +152,6 @@ class Carro():
 
     def acelerar(self):
         self.motor.acelerar()
+
+    def frear(self):
+        self.motor.frear()
