@@ -155,3 +155,6 @@ class Carro():
 
     def frear(self):
         self.motor.frear()
+
+    def calcular_direcao(self):
+        return self.direcao.valor
