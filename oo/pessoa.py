@@ -26,3 +26,9 @@ if __name__=='__main__':
         print(filho.nome)
 
 
+    adorilson.sobrenome = 'Bezerra'
+    print(adorilson.sobrenome)
+
+    del adorilson.filhos
+    print(alice.__dict__)
+    print(adorilson.__dict__)
