@@ -104,3 +104,26 @@ class Motor():
         self.velocidade -= 2
         if self.velocidade<0:
             self.velocidade = 0
+
+
+class Direcao():
+    NORTE = 'Norte'
+    LESTE = 'Leste'
+    SUL = 'Sul'
+    OESTE = 'Oeste'
+
+    def __init__(self):
+        self.valor = Direcao.NORTE
+
+    def girar_a_direita(self):
+        if self.valor == Direcao.NORTE:
+            self.valor = Direcao.LESTE
+        elif self.valor == Direcao.LESTE:
+            self.valor = Direcao.SUL
+        elif self.valor == Direcao.SUL:
+            self.valor = Direcao.OESTE
+        else:
+            self.valor = Direcao.NORTE
+
+    def girar_a_esquerda(self):
+        pass
