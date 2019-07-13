@@ -60,12 +60,16 @@ O       L
     >>> direcao.valor
     'Norte'
     >>> direcao.girar_a_esquerda()
+    >>> direcao.valor
     'Oeste'
     >>> direcao.girar_a_esquerda()
+    >>> direcao.valor
     'Sul'
     >>> direcao.girar_a_esquerda()
+    >>> direcao.valor
     'Leste'
     >>> direcao.girar_a_esquerda()
+    >>> direcao.valor
     'Norte'
     >>> carro = Carro(direcao, motor)
     >>> carro.calcular_velocidade()
@@ -126,4 +130,11 @@ class Direcao():
             self.valor = Direcao.NORTE
 
     def girar_a_esquerda(self):
-        pass
+        if self.valor == Direcao.NORTE:
+            self.valor = Direcao.OESTE
+        elif self.valor == Direcao.OESTE:
+            self.valor = Direcao.SUL
+        elif self.valor == Direcao.SUL:
+            self.valor = Direcao.LESTE
+        else:
+            self.valor = Direcao.NORTE
