@@ -1,5 +1,6 @@
 
 
+
 """
 Você deve criar uma classe carro que vai possuir
 dois atributos compostos por outras duas classes:
@@ -138,3 +139,10 @@ class Direcao():
             self.valor = Direcao.LESTE
         else:
             self.valor = Direcao.NORTE
+
+
+class Carro():
+
+    def __init__(self, direcao, motor):
+        self.direcao = direcao
+        self.motor = motor
