@@ -149,3 +149,6 @@ class Carro():
 
     def calcular_velocidade(self):
         return self.motor.velocidade
+
+    def acelerar(self):
+        self.motor.acelerar()
