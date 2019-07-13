@@ -12,15 +12,17 @@ if __name__=='__main__':
     alice = Pessoa(nome='Alice')
     alexia = Pessoa(nome='Alexia')
 
-    p = Pessoa(alice, alexia, nome='Adorilson')
+    adorilson = Pessoa(alice, alexia, nome='Adorilson')
 
-    print(Pessoa.cumprimentar(p))
-    print(id(p))
-    print(p.cumprimentar())
-    print(p.nome)
-    p.nome = 'Adorilson'
-    print(p.nome)
-    print(p.idade)
+    print(Pessoa.cumprimentar(adorilson))
+    print(id(adorilson))
+    print(adorilson.cumprimentar())
+    print(adorilson.nome)
+    adorilson.nome = 'Adorilson'
+    print(adorilson.nome)
+    print(adorilson.idade)
 
-    for filho in p.filhos:
+    for filho in adorilson.filhos:
         print(filho.nome)
+
+
